@@ -7,7 +7,7 @@ const moment = require('moment');
 const dev = process.argv.slice(2)[0] === 'dev';
 const app = next({dev});
 const handle = app.getRequestHandler();
-const port = 3002;
+const port = 443;
 app.prepare().then(() => {
   createServer((req, res) => {
     // Be sure to pass `true` as the second argument to `url.parse`.
